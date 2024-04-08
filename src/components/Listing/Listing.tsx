@@ -1,7 +1,10 @@
 import Item from "../Item/Item"
-import ListingProps from "../../models/ListingProps"
+//import ListingProps from "../../models/ListingProps"
+import ItemInfo from '../../models/ItemInfo'
 
-const Listing = ( { items }: ListingProps) => {
+
+//const Listing = ( { items }: ListingProps) => {
+const Listing = ( {items}: {items: ItemInfo[]}) => {
 
   return (
     <div className="item-list">
