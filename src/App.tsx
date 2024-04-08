@@ -1,7 +1,7 @@
 import './App.css'
 import Listing from './components/Listing/Listing'
 import info from './data/etsy.json';
-import ItemInfo from './models/itemInfo';
+import ItemInfo from './models/ItemInfo';
 
 function App() {
   const data = info;

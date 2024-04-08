@@ -1,11 +1,11 @@
 import Item from "../Item/Item"
-import ItemInfo from "../../models/itemInfo"
+import ListingProps from "../../models/ListingProps"
 
-const Listing = ( props: {items: ItemInfo[]}) => {
+const Listing = ( { items }: ListingProps) => {
 
   return (
     <div className="item-list">
-      {props.items.map((el) => <Item item={el} key={el.listing_id} />)}
+      {items.map((el) => <Item item={el} key={el.listing_id} />)}
     </div>
   )
 }
